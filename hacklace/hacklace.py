@@ -7,7 +7,7 @@ def load():
 
     with open('hacklace.txt') as f:
         while line := f.readline():
-            print("L:", line)
+            # print("L:", line)
             bytes = bytearray()
             if state == 'start':
                 if line.startswith('HL'):
@@ -18,7 +18,7 @@ def load():
                 i = 0
                 start = -1
                 while i < len(line):
-                    print("C:", i)
+                    # print("C:", i)
                     c = line[i]
                     if c == '\n':
                         break
@@ -56,11 +56,10 @@ def load():
     print(apps)
 
 
-
-
-
-
 def run():
+    print("Running...")
+
+    # Das ist bisher nur eine kleine Demo 
     pew.init()
     screen = pew.Pix()
     x = 0
